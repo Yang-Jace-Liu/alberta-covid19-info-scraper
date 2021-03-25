@@ -11,6 +11,6 @@ pip install .
 
 # Information Code
 
-|Code|Data Source|
-|----|-------|
-|AHSHEATMAP|https://www.alberta.ca/stats/covid-19-alberta-statistics.htm#geospatial|
+|Code|Data Source|Arguments|
+|----|-------|-------------|
+|AHSHEATMAP|https://www.alberta.ca/stats/covid-19-alberta-statistics.htm#geospatial|NULL
