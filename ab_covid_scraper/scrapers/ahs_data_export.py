@@ -19,7 +19,18 @@ class AHSDataExportScraper(Scraper):
 
     def __init__(self):
         self._type_element_map = {
-            "cases": "htmlwidget-bb35c0bfc61700d1e896"
+            "cases": "htmlwidget-bb35c0bfc61700d1e896",
+            "cases_last_week_by_zone": "htmlwidget-a4f0a1c47709305f3ca2",
+            "cases_active_by_zone": "htmlwidget-b3c20fdf3ca9927ff8d9",
+            "cases_last_week_by_age": "htmlwidget-afc37081ff68d8aedc3f",
+            "cases_active_by_age": "htmlwidget-6955d71f98735c8e486a",
+            "cases_last_week_by_source": "htmlwidget-154345f031d427a8c16d",
+            "cases_active_by_source": "htmlwidget-d187025499ef06d2c1fa",
+            "cases_per_day_by_status": "htmlwidget-0cd08c3028c479b58ba7",
+            "cases_per_day_by_source": "htmlwidget-fb64085719406f5b8314",
+            "cases_per_day_by_confirmation": "htmlwidget-755ed844fe564420a516",
+            "cases_per_day_by_age": "htmlwidget-cd5ae5f9b4cb4cee35a8",
+            "density_per_day_by_age": "htmlwidget-719b898fa4c1fb47ce2a"
         }
 
     def scrape(self, *args, **kwargs) -> object:
