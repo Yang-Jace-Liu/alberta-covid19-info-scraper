@@ -5,7 +5,7 @@ from distutils.core import setup
 from setuptools import find_packages
 
 requirements = [
-
+    "pytest"
 ]
 
 setup(name='alberta-covid-info-scraper',
@@ -14,6 +14,6 @@ setup(name='alberta-covid-info-scraper',
       author='Yang Liu',
       author_email='yang.liu5@ucalgary.ca',
       packages=find_packages(),
-      scripts=['scripts/ab-covid-scraper.py'],
+      scripts=['scripts/ab-covid-test_scraper.py'],
       install_requires=requirements
       )
