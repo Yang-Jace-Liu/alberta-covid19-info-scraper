@@ -8,7 +8,7 @@ class Scraper(ABC):
 
     @staticmethod
     @abstractmethod
-    def code(self) -> str:
+    def code() -> str:
         """
         The code of this information source
         :return: A string indicating the unique code of this source
@@ -17,7 +17,7 @@ class Scraper(ABC):
 
     @staticmethod
     @abstractmethod
-    def description(self) -> str:
+    def description() -> str:
         pass
 
     @abstractmethod

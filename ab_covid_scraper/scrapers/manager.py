@@ -23,7 +23,7 @@ class ScraperWrapper(object):
 
     def run(self, *args, **kwargs):
         instance = self._cls()
-        instance.scrape(*args, **kwargs)
+        return instance.scrape(*args, **kwargs)
 
 
 class ScraperManager(object):
@@ -37,7 +37,7 @@ class ScraperManager(object):
     @staticmethod
     def get_scraper(code) -> Optional[ScraperWrapper]:
         try:
-            scraper_cls = next(filter(lambda x: x.code == code, ScraperManager.scrapers))
+            scraper_cls = next(filter(lambda x: x.code() == code, ScraperManager.scrapers))
             return ScraperWrapper(scraper_cls, scraper_cls.code, scraper_cls.description)
         except StopIteration:
             return None

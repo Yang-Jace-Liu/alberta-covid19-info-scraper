@@ -5,7 +5,9 @@ from distutils.core import setup
 from setuptools import find_packages
 
 requirements = [
-    "pytest"
+    "pytest",
+    "requests",
+    "beautifulsoup4"
 ]
 
 setup(name='alberta-covid-info-scraper',
