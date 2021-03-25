@@ -15,7 +15,7 @@ class AlbertaHealthServiceHeatmapScraper(Scraper):
 
     @staticmethod
     def description() -> str:
-        return "Fetch the AHS Heatmap Data from https://www.alberta.ca/stats/covid-19-alberta-statistics.htm#geospatial"
+        return "Fetch the AHS Covid Heatmap Data from https://www.alberta.ca/stats/covid-19-alberta-statistics.htm#geospatial"
 
     def scrape(self, *args, **kwargs) -> object:
         raw_data = self.get_data_body()

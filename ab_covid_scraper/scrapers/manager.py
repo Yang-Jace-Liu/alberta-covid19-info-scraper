@@ -38,7 +38,7 @@ class ScraperManager(object):
     def get_scraper(code) -> Optional[ScraperWrapper]:
         try:
             scraper_cls = next(filter(lambda x: x.code() == code, ScraperManager.scrapers))
-            return ScraperWrapper(scraper_cls, scraper_cls.code, scraper_cls.description)
+            return ScraperWrapper(scraper_cls, scraper_cls.code(), scraper_cls.description())
         except StopIteration:
             return None
 
