@@ -26,10 +26,11 @@ def run_scraper(args):
     if scraper is None:
         print("Unknown info_code: %s" % args.info_code)
         return 1
-    else:
-        result = scraper.run(*args.arguments)
-        print(result)
-        return 0
+    result = scraper.run(*args.arguments)
+    if result is None:
+        return 1
+    print(result)
+    return 0
 
 
 def list_scrapers(args):
