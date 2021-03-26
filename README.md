@@ -26,7 +26,8 @@ commands:
 |Code|Data Source|Arguments|
 |----|-------|-------------|
 |AHSHEATMAP|https://www.alberta.ca/stats/covid-19-alberta-statistics.htm#geospatial|NULL
-|AHSDATA|https://www.alberta.ca/stats/covid-19-alberta-statistics.htm#data-export| One argument: data_type. Check [AHSDATA](#AHSDATA)
+|AHSDATA|https://www.alberta.ca/stats/covid-19-alberta-statistics.htm#data-export| data_type. Check [AHSDATA](#AHSDATA)
+|WEATHERGC|https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=50430| year, format. Check [WEATHERGC](#WEATHERGC)
 
 # AHSDATA
 
@@ -50,3 +51,10 @@ commands:
 |cases_per_day_by_confirmation|The per-day number of confirmed cases and probable cases.|
 |cases_per_day_by_age|The per-day number of cases by ages.|
 |density_per_day_by_age|The per-day density (number of cases per 100,000 population) by ages.
+
+# WEATHERGC
+
+## Argument:
+
+* year: The year of weather data
+* format (optional): The format of required data. Available formats: csv, xml. Default format is csv.
