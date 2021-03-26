@@ -23,11 +23,12 @@ commands:
 
 # Information Code
 
-|Code|Data Source|Arguments|
-|----|-------|-------------|
-|AHSHEATMAP|https://www.alberta.ca/stats/covid-19-alberta-statistics.htm#geospatial|NULL
-|AHSDATA|https://www.alberta.ca/stats/covid-19-alberta-statistics.htm#data-export| data_type. Check [AHSDATA](#AHSDATA)
-|WEATHERGC|https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=50430| year, format. Check [WEATHERGC](#WEATHERGC)
+|Code|Data Source|Description|Arguments|
+|----|-----------|-----------|---------|
+|AHSHEATMAP|https://www.alberta.ca/stats/covid-19-alberta-statistics.htm#geospatial|Geospatial COVID information|NULL
+|AHSDATA|https://www.alberta.ca/stats/covid-19-alberta-statistics.htm#data-export|COVID statistics|data_type. Check [AHSDATA](#AHSDATA)
+|WEATHERGC|https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=50430|Weather history|year, format. Check [WEATHERGC](#WEATHERGC)
+|WEATHERSTATS|https://calgary.weatherstats.ca/charts/temperature-daily.html|The highest, lowest, and mean temperature in recent 2 weeks|NULL
 
 # AHSDATA
 

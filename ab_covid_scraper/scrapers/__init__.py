@@ -1,8 +1,10 @@
 from ab_covid_scraper.scrapers.ahs_data_export import AHSDataExportScraper
 from ab_covid_scraper.scrapers.ahs_heatmap import AlbertaHealthServiceHeatmapScraper
-from ab_covid_scraper.scrapers.weather_gc import WeatherGCScraper
 from ab_covid_scraper.scrapers.manager import ScraperManager
+from ab_covid_scraper.scrapers.weather_gc import WeatherGCScraper
+from ab_covid_scraper.scrapers.weatherstats import WeatherStatsScraper
 
 ScraperManager.add_scraper(AlbertaHealthServiceHeatmapScraper)
 ScraperManager.add_scraper(AHSDataExportScraper)
 ScraperManager.add_scraper(WeatherGCScraper)
+ScraperManager.add_scraper(WeatherStatsScraper)
