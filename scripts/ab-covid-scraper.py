@@ -36,7 +36,7 @@ def run_scraper(args):
 def list_scrapers(args):
     scrapers = ScraperManager.get_available_scrapers()
     for scraper in scrapers:
-        print("%10s    %s" % (scraper.code(), scraper.description()))
+        print("%14s    %s" % (scraper.code(), scraper.description()))
 
 
 if __name__ == '__main__':

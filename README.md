@@ -29,6 +29,7 @@ commands:
 |AHSDATA|https://www.alberta.ca/stats/covid-19-alberta-statistics.htm#data-export|COVID statistics|data_type. Check [AHSDATA](#AHSDATA)
 |WEATHERGC|https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=50430|Weather history|year, format. Check [WEATHERGC](#WEATHERGC)
 |WEATHERSTATS|https://calgary.weatherstats.ca/charts/temperature-daily.html|The highest, lowest, and mean temperature in recent 2 weeks|NULL
+|ARCGISABCOVID|https://robsonfletcher.maps.arcgis.com/apps/View/index.html?appid=23c067a0048d4320859e55be7d89949b|Regional Covid-19 information|NULL
 
 # AHSDATA
 
