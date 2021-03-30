@@ -32,7 +32,7 @@ class WeatherStatsScraper(Scraper):
 
     def parse(self, match):
         year = int(match.group(1).strip())
-        month = int(match.group(2).strip())
+        month = int(match.group(2).strip()) + 1
         day = int(match.group(3).strip())
         maximum = float(match.group(4).strip())
         hourly_mean = float(match.group(5).strip())
