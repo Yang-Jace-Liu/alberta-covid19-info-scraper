@@ -21,7 +21,7 @@ class Scraper(ABC):
         pass
 
     @abstractmethod
-    def scrape(self, *args, **kwargs) -> object:
+    def scrape(self, *args, **kwargs) -> str:
         """
         Scrape the information using the parameters in *args and **kwargs
         :return: The result of scraping

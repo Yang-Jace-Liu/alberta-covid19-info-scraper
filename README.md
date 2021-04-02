@@ -48,7 +48,7 @@ commands:
 |cases_active_by_age|The number of active cases by ages.|
 |cases_last_week_by_source|The number of cases in last week by infection reasons.|
 |cases_active_by_source|The number of active cases by infection reasons.|
-|cases_per_day_by_status|The per-day number of total cases, active cases, recovered cases and deaths.|
+|cases_per_day_by_state|The per-day number of total cases, active cases, recovered cases and deaths.|
 |cases_per_day_by_source|The per-day number of cases in different reasons: known exposure, travel, and unknown exposure.|
 |cases_per_day_by_confirmation|The per-day number of confirmed cases and probable cases.|
 |cases_per_day_by_age|The per-day number of cases by ages.|
