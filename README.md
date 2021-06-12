@@ -21,6 +21,11 @@ commands:
     list      List all available scrapers
 ```
 
+#Docker Usage
+```bash
+usage: docker exec -it [container-id] python3 home/scripts/ab-covid-scraper.py [-h] {run,list} ...
+```
+
 # Information Code
 
 |Code|Data Source|Description|Arguments|
