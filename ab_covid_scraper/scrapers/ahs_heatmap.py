@@ -64,7 +64,7 @@ class AlbertaHealthServiceHeatmapScraper(Scraper):
         graph_name = args[2]
         properties = args[3]
 
-        info_list = args[6]
+        info_list = args[4] #changed from 6 to 4 
 
         for border, info_str, color in zip(border_list, info_list, properties['fillColor']):
             data = {'fillColor': color}
@@ -95,7 +95,7 @@ class AlbertaHealthServiceHeatmapScraper(Scraper):
 
         data["name"] = item_strs[0]
         data["total"] = int(item_strs[1].split(' ')[0])
-        data["active"] = int(item_strs[2].split(' ')[0])
-        data["recovered"] = int(item_strs[3].split(' ')[0])
-        data["death"] = int(item_strs[4].split(' ')[0])
+        data["active"] = int(item_strs[3].split(' ')[0]) #changed from 2 to 3
+        data["recovered"] = int(item_strs[4].split(' ')[0]) #changed from 3 to 4
+        data["death"] = int(item_strs[5].split(' ')[0]) #changed from 4 to 5
         return data
