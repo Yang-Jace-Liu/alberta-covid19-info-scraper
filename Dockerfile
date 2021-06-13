@@ -1,10 +1,16 @@
-#FROM ubuntu:18.04
-FROM python:3.7
+FROM python:3
 
-RUN apt-get update && \
-    pip3 install --upgrade pip
-COPY ./ /home/
-RUN cd /home/ && \
-    python3 setup.py install 
-CMD sleep infinity
+RUN mkdir /scraper_app
+
+WORKDIR /scraper_app
+
+COPY setup.py .
+
+COPY scripts ./scripts
+
+COPY ab_covid_scraper ./ab_covid_scraper
+
+RUN python3 setup.py install
+
+ENTRYPOINT ["ab-covid-scraper.py"]
 
